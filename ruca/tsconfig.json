@@ -1,0 +1,19 @@
+{
+  "extends": "expo/tsconfig.base",
+  "scripts": {
+    "ts:check": "tsc"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}
