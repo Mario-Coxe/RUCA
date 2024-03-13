@@ -1,12 +1,15 @@
+import React from "react";
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { NativeBaseProvider, Box } from "native-base";
+import Home from "@/screens/Home";
+import AppNavigator from "@/navigation/AppNavigator";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeBaseProvider>
+      <AppNavigator/>
+    </NativeBaseProvider>
   );
 }
 
