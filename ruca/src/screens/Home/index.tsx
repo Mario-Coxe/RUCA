@@ -42,6 +42,21 @@ const data = [
     logo: "https://i.pinimg.com/originals/84/a2/ff/84a2ffcc555d2f1f1d0a260e67c86b1a.png",
     type: "Toyota",
   },
+  {
+    id: "6",
+    logo: "https://i.pinimg.com/originals/84/a2/ff/84a2ffcc555d2f1f1d0a260e67c86b1a.png",
+    type: "Toyota",
+  },
+  {
+    id: "7",
+    logo: "https://i.pinimg.com/originals/84/a2/ff/84a2ffcc555d2f1f1d0a260e67c86b1a.png",
+    type: "Toyota",
+  },
+  {
+    id: "8",
+    logo: "https://i.pinimg.com/originals/84/a2/ff/84a2ffcc555d2f1f1d0a260e67c86b1a.png",
+    type: "Toyota",
+  },
 ];
 
 const dataCar = [
@@ -55,7 +70,7 @@ const dataCar = [
     price: 2000,
     km: 4500,
     brand: "Ferrari 45006BX",
-    owner: "Evandro Eusébio",
+    owner: "Mário Coxe",
     type: "Gasolina"
   },
   {
@@ -68,7 +83,7 @@ const dataCar = [
     price: 2000,
     km: 4500,
     brand: "Ferrari 45006BX",
-    owner: "Evandro Eusébio",
+    owner: "Mário Coxe",
     type: "Gasolina"
   },
   {
@@ -81,7 +96,7 @@ const dataCar = [
     price: 2000,
     km: 4500,
     brand: "Ferrari 45006BX",
-    owner: "Evandro Eusébio",
+    owner: "Mário Coxe",
     type: "Gasolina"
   },
 ]
@@ -102,16 +117,16 @@ export default function Home() {
             }}
           />
           <VStack>
-            <Text fontSize={12}>Evandro Eusébio</Text>
+            <Text fontSize={12}>Mário Coxe</Text>
             <Text fontSize={12}>938390399</Text>
           </VStack>
         </HStack>
         <HStack space={5}>
           <TouchableOpacity>
-            <Ionicons name="search" size={30} color={"#000"} />
+            <Ionicons name="search" size={24} color={"#000"} />
           </TouchableOpacity>
           <TouchableOpacity>
-            <Ionicons name="notifications-outline" size={30} color={"#000"} />
+            <Ionicons name="notifications-outline" size={24} color={"#000"} />
           </TouchableOpacity>
         </HStack>
       </HStack>
@@ -124,6 +139,7 @@ export default function Home() {
           showsHorizontalScrollIndicator={false}
         />
       </Box>
+
       <Box flex={1}>
         <FlatList
           data={dataCar}

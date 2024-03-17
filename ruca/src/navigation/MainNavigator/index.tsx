@@ -82,7 +82,7 @@ export default function MainNavigator() {
     <Tab.Navigator
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
-          let iconName
+          let iconName;
 
           if (route.name === "Home") {
             iconName = focused ? "home" : "home-outline";
@@ -103,21 +103,22 @@ export default function MainNavigator() {
           paddingBottom: 5,
           paddingTop: 5,
         },
-      })}
-    >
+        
+      
+      })}>
       <Tab.Screen
-        name="Home"
+        name='Home'
         component={Home}
         options={{ headerShown: false }}
       />
 
       <Tab.Screen
-        name="Favorite"
+        name='Favorite'
         component={Favorites}
         options={{ headerShown: false }}
       />
       <Tab.Screen
-        name="Profile"
+        name='Profile'
         component={Profile}
         options={{ headerShown: false }}
       />

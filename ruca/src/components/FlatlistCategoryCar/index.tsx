@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import {
@@ -13,16 +15,26 @@ import { PRIMARY, SECUNDARY, FIFTH } from "@/styles/global";
 
 export default function FlatlistCategoryCar({ data }: any) {
   return (
-    <TouchableOpacity style={{flex: 1, borderWidth: 1, justifyContent:'center', alignItems:'center', padding: 5, borderColor: FIFTH, marginHorizontal: 10,  borderRadius: 10}}>
-          <Image
-            source={{
-              uri: data.logo,
-            }}
-            alt="Alternate Text"
-            size={7}
-          />
-          <Text>{data.type}</Text>
-
+    <TouchableOpacity
+      style={{
+        flex: 1,
+        borderWidth: 1,
+        width: 60,
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 5,
+        borderColor: FIFTH,
+        marginHorizontal: 10,
+        borderRadius: 10,
+      }}>
+      <Image
+        source={{
+          uri: data.logo,
+        }}
+        alt='Alternate Text'
+        size={7}
+      />
+      <Text>{data.type}</Text>
     </TouchableOpacity>
   );
 }
