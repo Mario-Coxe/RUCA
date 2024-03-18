@@ -23,7 +23,7 @@ export default function FlatlistCategoryCar({ data }) {
                 justifyContent: "center",
                 alignItems: "center",
                 padding: 5,
-                borderColor: "#fff",
+                borderColor: "#0077B6",
                 marginHorizontal: 10,
                 borderRadius: 10,
             }}>

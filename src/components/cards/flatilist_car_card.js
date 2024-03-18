@@ -60,7 +60,7 @@ export default function FlatlistCarCard({ data }) {
                 borderBottomLeftRadius={20}
                 borderBottomRightRadius={20}
                 padding={4}
-                shadow={"3"}
+                shadow={"6"}
                 style={{ marginRight: 1 }}
                 justifyContent={"space-between"}
             >
